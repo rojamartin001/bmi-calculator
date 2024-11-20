@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bmi calculator</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Inconsolata:wght@200..900&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Playball&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+   <div id="frame">
+    <br>
+       <h3 style="text-align: center; font-size: 30px;">BMI-CALCULATOR</h3>
+        <div id="genderdiv">
+           
+               <div class="gender">
+                  <img src="./images/male-removebg-preview.png" alt="no image">
+                  <div class="labels"><label for="">Male</label> <input  type="radio" name="grp"></div>
+               </div>
+               <div class="gender">
+                  <img src="./images/women-removebg-preview.png" alt="no image">
+                 <div  class="labels"> <label for="">female</label> <input type="radio" name="grp"></div>
+               </div>
+        </div>
+        <br>
+        <div id="age">
+            <p>Age</p><br>
+            <input style="height: 30px;" type="number" name="" id="agee">     
+        </div><br>
+        <div id="measurements">
+            <div class="weight">
+                <p>Weight (kg)</p><br>
+                <input style="height: 30px;" type="number" id="weight">
+               
+            </div>
+            <div class="height">
+                <p>Height (cm)</p><br>
+                <input style="height: 30px;" type="number" id="height">
+               
+            </div>
+        </div>
+        <br><br>
+   <div id="btn">
+     <button onclick="bmicalc()" style="text-align: center;font-weight: 700;font-size: 20px;">CALCULATE BMI</button>
+    </div><br>
+    <h2 id="result" style="text-align: center;"></h2>
+    <h3 id="comt"style="text-align: center;"></h3>
+   </div>
+</body>
+<script src="./main.js"></script>
+</html>
